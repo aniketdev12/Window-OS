@@ -30,6 +30,11 @@ html, body {
     background-color: var(--win-taskbar-bg);
     color: var(--win-text);
     height:calc(100vh - 40px);
+    background-image: url('assets/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
 }
 .weatherSection{
     display: flex;
@@ -55,4 +60,132 @@ html, body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* Apps Related Styles */
+.apps {
+  display: flex;
+  gap: 20px;
+}
+.appIcon img {
+  width: 40px;
+  height: 40px;
+}
+.appName {
+  font-size: 12px;
+  color:#000;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2px 4px;
+  border-radius: 5px;
+  border: 1px solid var(--win-border);
+}
+
+.app-item:hover .appName {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.app-item:active .appName {
+  background-color: rgba(255, 255, 255, 1);
+}
+.app-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+/* calculator modal styles */
+/* calculator popup main box */
+.calculatorModel{
+  position:absolute;
+  top:120px;
+  left:300px;
+  width:300px;
+  background:#1f1f1f;
+  border-radius:12px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.6);
+  overflow:hidden;
+  font-family:Segoe UI, sans-serif;
+  color:#fff;
+  display:none; 
+}
+
+.calculatorModel.show{
+  display:block;
+}
+
+.calculatorHeader{
+  background:#2b2b2b;
+  padding:10px 12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:move;
+}
+
+.calculatorTitle{
+  font-size:14px;
+  font-weight:500;
+}
+
+.calculatorClose{
+  cursor:pointer;
+  padding:2px 8px;
+  border-radius:4px;
+  transition:.2s;
+}
+.calculatorClose:hover{
+  background:#ff4d4d;
+  color:#fff;
+}
+
+/* body */
+.calculatorBody{
+  padding:12px;
+}
+
+.calculatorDisplay{
+  width:100%;
+  height:55px;
+  border:none;
+  outline:none;
+  background:#111;
+  color:#fff;
+  font-size:26px;
+  text-align:right;
+  padding:10px;
+  border-radius:8px;
+  margin-bottom:12px;
+}
+
+
+.calculatorButtons{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+}
+
+
+.calcBtn{
+  height:50px;
+  border:none;
+  border-radius:8px;
+  background:#2e2e2e;
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
+  transition:.15s;
+}
+
+.calcBtn:hover{
+  background:#3c3c3c;
+}
+
+
+.equal-btn{
+  background:#4cc2ff;
+  color:#000;
+  font-weight:bold;
+}
+.equal-btn:hover{
+  background:#67d0ff;
 }

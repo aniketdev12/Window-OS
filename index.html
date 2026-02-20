@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="mainScreen"></div>
+    <div class="mainScreen">
+      <div class="apps">
+        <div class="calculator app-item">
+          <div class="appIcon"><img src="assets/calculator.png" alt="Calculator Icon"></div>
+          <div class="appName">Calculator</div>
+        </div>
+        <!-- Notes -->
+         <div class="notes app-item">
+          <div class="appIcon"><img src="assets/app.png" alt="Notes Icon"></div>
+          <div class="appName">Notes</div>
+        </div>
+      </div>
+    </div>
     <div class="taskBar">
       <div class="weatherSection">
         <div class="weatherIcon">🌤️</div>
@@ -31,5 +43,34 @@
         <div class="time">12:30 PM</div>
       </div>
     </div>
-  </body>
+
+    <!-- All Model Code Here -->
+     <div class="calculatorModel">
+      <div class="calculatorHeader">
+        <div class="calculatorTitle">Calculator</div>
+        <div class="calculatorClose">X</div>  
+      </div>
+      <div class="calculatorBody">
+        <input type="text" class="calculatorDisplay"  />
+        <div class="calculatorButtons">
+          <button class="calcBtn" data-value="7">7</button>
+          <button class="calcBtn" data-value="8">8</button>
+          <button class="calcBtn" data-value="9">9</button>
+          <button class="calcBtn" data-value="/">/</button>
+          <button class="calcBtn" data-value="4">4</button>
+          <button class="calcBtn" data-value="5">5</button>
+          <button class="calcBtn" data-value="6">6</button>
+          <button class="calcBtn" data-value="*">*</button>
+          <button class="calcBtn" data-value="1">1</button>
+          <button class="calcBtn" data-value="2">2</button>
+          <button class="calcBtn" data-value="3">3</button>
+          <button class="calcBtn" data-value="-">-</button>
+          <button class="calcBtn" data-value="0">0</button>
+          <button class="calcBtn" data-value=".">.</button>
+          <button class="calcBtn equal-btn" data-value="=">=</button>
+          <button class="calcBtn" data-value="+">+</button>
+  
+  
+  <script src="script.js"></script>
+        </body>
 </html>
